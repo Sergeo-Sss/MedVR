@@ -11,7 +11,7 @@ public class Stages : MonoBehaviour
         if (other.tag == "trap")
         {
             firepoint.enabled = false;
-            other.gameObject.SetActive(false);
+            Destroy(other.gameObject);
             idealtrap.SetActive(true);
             text.text = "У пациента ожог:\nЗадание пройдено!";
         }
